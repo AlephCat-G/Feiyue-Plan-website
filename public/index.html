@@ -90,33 +90,33 @@
       </div>
     </div>
   </section>
-  
 
-  <<section class="bg-gray-200 py-12">
-    <div class="container mx-auto">
-      <h3 class="text-3xl font-bold mb-4 text-center">Contact Us</h3>
-      <p class="text-lg text-center mb-12">请留下你的个人陈述，包括三维、意向等</p>
-      <form class="max-w-lg mx-auto">
-        <div class="flex flex-wrap -mx-2 mb-4">
-          <div class="w-full md:w-1/2 px-2 mb-4">
-            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">姓名</label>
-            <input type="text" id="姓名" name="姓名" class="w-full border border-gray-300 rounded py-2 px-4 focus:outline-none focus:border-indigo-500">
+    <section class="bg-gray-200 py-12">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-bold mb-4 text-center">Contact Us</h3>
+        <p class="text-lg text-center mb-12">请留下你的个人陈述，包括三维、意向等</p>
+        <form class="max-w-lg mx-auto" action="/submit" method="POST">
+          <div class="flex flex-wrap -mx-2 mb-4">
+            <div class="w-full md:w-1/2 px-2 mb-4">
+              <label for="name" class="block text-gray-700 text-sm font-bold mb-2">姓名</label>
+              <input type="text" id="姓名" name="姓名" class="w-full border border-gray-300 rounded py-2 px-4 focus:outline-none focus:border-indigo-500">
+            </div>
+            <div class="w-full md:w-1/2 px-2 mb-4">
+              <label for="email" class="block text-gray-700 text-sm font-bold mb-2">手机或邮件</label>
+              <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded py-2 px-4 focus:outline-none focus:border-indigo-500">
+            </div>
           </div>
-          <div class="w-full md:w-1/2 px-2 mb-4">
-            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">手机或邮件</label>
-            <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded py-2 px-4 focus:outline-none focus:border-indigo-500">
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">你的意向</label>
+            <textarea id="message" name="message" class="w-full border border-gray-300 rounded py-2 px-4 h-32 resize-none focus:outline-none focus:border-indigo-500"></textarea>
           </div>
-        </div>
-        <div class="mb-4">
-          <label for="message" class="block text-gray-700 text-sm font-bold mb-2">你的意向</label>
-          <textarea id="message" name="message" class="w-full border border-gray-300 rounded py-2 px-4 h-32 resize-none focus:outline-none focus:border-indigo-500"></textarea>
-        </div>
-        <div class="text-center">
-          <button type="submit" class="bg-indigo-500 text-white font-semibold py-2 px-4 rounded hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">Submit</button>
-        </div>
-      </form>
-    </div>
-  </section>
+          <div class="text-center">
+            <button type="submit" class="bg-indigo-500 text-white font-semibold py-2 px-4 rounded hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
   
 </body>
 </html>
